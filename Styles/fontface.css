@@ -3,3 +3,8 @@
     font-family: yekan;
     src: url(../Fonts/iranyekan.woff) format(woff);
 }
+
+@font-face {
+    font-family: arial;
+    src: url(../Fonts/ARIALN.TTF) format(ttf);
+}
