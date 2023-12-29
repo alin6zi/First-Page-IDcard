@@ -1,6 +1,7 @@
 {
-   "recommendations": [
-      "aaravb.chrome-extension-developer-tools",
-      "pranaygp.vscode-css-peek"
-   ]
+  "recommendations": [
+    "aaravb.chrome-extension-developer-tools",
+    "pranaygp.vscode-css-peek",
+    "auchenberg.vscode-browser-preview"
+  ]
 }

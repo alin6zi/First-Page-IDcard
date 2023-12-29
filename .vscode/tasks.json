@@ -1,0 +1,14 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "npm",
+      "script": "build",
+      "path": "01",
+      "group": "build",
+      "problemMatcher": [],
+      "label": "npm: build - 01",
+      "detail": "node ./node_modules/webpack/bin/webpack.js --mode=production --config config/webpack.config.js"
+    }
+  ]
+}

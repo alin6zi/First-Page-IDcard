@@ -1,15 +1,17 @@
 :root {
    --black: #000;
-   --white: #f9f9f9;
+   --white: #ffffff;
    --lightblue: #BAE8EF;
-   --darkblue: #3389a1;
-   --blackblue:#175d8b;
+   --darkblue: #1d82c5;
+   --blackblue:#1273b4;
+   --lightgray:#c5c5c5;
    --gray: #444;
    --orange: #ff9900;
-   --darkyellow: #f0fa00;
-   --yellow: #fada3c;
+   --darkyellow: #fdc50e;
+   --yellow: #fae94d;
    --lightyellow: #f3e28a;
-   --red: #ff6392;
+   --lightred: #fd4437;
+   --darkred: #5a0000;
 }
 
 * {
@@ -125,7 +127,7 @@ h1 {
    border-bottom-left-radius: 100px;
    border-top-right-radius: 100px;
    margin: 0 auto;
-   border: var(--darkyellow) 8px solid;
+   border: var(--lightyellow) 8px solid;
 }
 
 .nav-border-block {
@@ -154,7 +156,7 @@ h1 {
    margin: 0 24px;
    width: 100px;
    height: 40px;
-   border: var(--orange) 3px solid;
+   border: var(--darkblue) 3px solid;
    border-radius: 50px;
 }
 
@@ -165,12 +167,12 @@ h1 {
 }
 
 .nav-button-link:hover .header-button {
-   background-color: var(--blackblue);
-   border: var(--white) 1px solid;
+   background-color: var(--darkblue);
+   border: var(--yellow) 3px solid;
 
 }
 .nav-button-link:hover .header-button p{
-   color: var(--lightyellow);
+   color: var(--yellow);
    font-weight: 500;
    padding: 3px;
 }
@@ -180,20 +182,22 @@ h1 {
 
 
 .nav-button-link:active .header-button {
-   background-color: var(--darkblue);
-   color: var(--lightblue);
-   font-weight: 400;
-   border: var(--lightblue) 1px solid;
+   background-color: var(--blackblue);
+   border: var(--darkyellow) 1px solid;
 }
 
-
+.nav-button-link:active .header-button p {
+   color: var(--darkyellow);
+   font-weight: 100;
+   padding: 3px;
+}
 
 .header-button {
    display: flex;
    width: 100%;
    height: 100%;
    background-color: var(--lightblue);
-   border: var(--yellow) 2px solid;
+   border: var(--white) 2px solid;
    border-radius: 50px;
    align-items: center;
 }
@@ -231,8 +235,8 @@ h1 {
    height: max-content;
    display: flex;
    justify-content: center;
-   border-top: 5px solid var(--gray);
-   border-bottom: 5px solid var(--gray);
+   border-top: 5px solid var(--darkyellow);
+   border-bottom: 5px solid var(--darkyellow);
    border-radius: 150px;
    padding: 50px;
    position: relative;
@@ -339,14 +343,11 @@ h1 {
 
 .seperator-links-label {
    position: absolute;
-   background-color: rgba(80, 150, 180, 0.35);
    top: -24px;
    right: 0;
-   width: 72px;
+   width: 73px;
    padding: 16px 5px 0;
-   text-align: center;
    margin: 0 91px 0 0;
-   font-weight: bolder;
    border-radius: 50px;
    border-bottom-left-radius: 0;
    border-bottom-right-radius: 0;
@@ -357,14 +358,11 @@ h1 {
 
 .seperator-info-label {
    position: absolute;
-   background-color: rgba(80, 150, 180, 0.4);
    top: -24px;
    right: 0;
    width: 73px;
    padding: 16px 5px 0;
-   text-align: center;
    margin: 0 186px 0 0;
-   font-weight: bolder;
    border-radius: 50px;
    border-bottom-left-radius: 0;
    border-bottom-right-radius: 0;
@@ -372,7 +370,15 @@ h1 {
    border-right: 3px solid var(--yellow);
    border-left: 3px solid var(--yellow);
 }
-
+.seperator-top-info p , .seperator-top-link p {
+color: var(--orange);
+background-color: rgba(80, 150, 180, 0.4);
+font-size: 15px;
+text-align: center;
+font-weight: bold;
+letter-spacing:2px;
+text-shadow: -1px 3px 1px  var(--black);
+}
 .footer-button-link {
    width: fit-content;
    height: fit-content;
@@ -380,7 +386,7 @@ h1 {
 
 .footer-link-list-item {
    margin-bottom: 10px;
-   background-color: #000;
+   background-color: var(--black);
    padding: calc((50% - 2rem) / 2) 0;
    border-radius: 50px;
 }
@@ -421,14 +427,33 @@ h1 {
    margin-bottom: 10px;
 }
 
-.footer-info-list-item>a>.block-text,
-.footer-info-list-item>.block-text {
+.block-text{
    text-align: left;
-   margin-left: 20%;
+margin-left: 15%;
+}
+
+a>.block-text{
+
+   font-weight: 100;
+color: var(--darkyellow);
+text-shadow: -1px 2px 5px var(--darkred);
+letter-spacing: 0.8px;
 }
 
 .footer-info-list-item>a[href="tel:+989038964501"]>.block-text {
    font-family: "arial";
+}
+
+.footer-info-list-item>.block-text{
+   font-weight: 100;
+   color: var(--darkyellow);
+   text-shadow: 2px 2px 5px var(--darkred);
+}
+
+.footer-list>ul>li>.title-text{
+font-size: 1.05rem;
+color: var(--black);
+   text-shadow: 0px 1px 5px  var(--gray);
 }
 
 
